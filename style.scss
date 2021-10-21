@@ -19,6 +19,23 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    height: $header-height;
+    background-color: $bg-header;
+    position: relative;
+
+    .logo{
+        height: calc($header-height - 20px);
+        margin: 10px 0;
+    }
+}
+
+main{
+    height: calc(100vh - $header-height);
+    width: 100%;
+    background-color: $bg-body;
+}
+
 .container{
     $container-margin: auto;
     &-l{
@@ -59,21 +76,4 @@ body{
             }
         }
     }
-}
-
-header{
-    height: $header-height;
-    background-color: $bg-header;
-    position: relative;
-
-    .logo{
-        height: calc($header-height - 20px);
-        margin: 10px 0;
-    }
-}
-
-main{
-    height: calc(100vh - $header-height);
-    width: 100%;
-    background-color: $bg-body;
 }

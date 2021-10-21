@@ -9,6 +9,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  height: 5rem;
+  background-color: #2E3A46;
+  position: relative;
+}
+header .logo {
+  height: calc(5rem - 20px);
+  margin: 10px 0;
+}
+
+main {
+  height: calc(100vh - 5rem);
+  width: 100%;
+  background-color: #1E2D3B;
+}
+
 .container-l {
   width: 95%;
   margin: auto;
@@ -44,22 +60,6 @@ body {
   margin: 2px 0;
   color: lightslategray;
   font-size: 20px;
-}
-
-header {
-  height: 5rem;
-  background-color: #2E3A46;
-  position: relative;
-}
-header .logo {
-  height: calc(5rem - 20px);
-  margin: 10px 0;
-}
-
-main {
-  height: calc(100vh - 5rem);
-  width: 100%;
-  background-color: #1E2D3B;
 }
 
 /*# sourceMappingURL=style.css.map */
