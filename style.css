@@ -16,6 +16,31 @@ body {
 .container-m {
   max-width: 1600px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+.container-m .albCont {
+  background-color: #2E3A46;
+  width: 20%;
+  padding: 15px;
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+.container-m .albCont img {
+  width: 100%;
+}
+.container-m .albCont h2 {
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 26px;
+}
+.container-m .albCont p {
+  margin: 2px 0;
+  color: lightslategray;
+  font-size: 20px;
 }
 
 header {

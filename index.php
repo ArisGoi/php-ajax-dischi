@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <?php include __DIR__ . '/components/header.php'; ?>
+
+    <!-- Main -->
+    <main>
+        <div class="container-m">
+            <div class="albCont">
+                <img src="..." alt="">
+                <h2>titolo</h2>
+                <p class="autore">autore</p>
+                <p class="anno">anno</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
