@@ -32,9 +32,12 @@ body{
         flex-wrap: wrap;
         padding-top: 40px;
 
+        &>div{
+            margin: 10px;
+        }
         .albCont{
             background-color: $bg-header;
-            width: calc(100% / 5);
+            width: calc(100% / 5 - 20px);
             padding: 15px;
             text-align: center;
             height: 100%;

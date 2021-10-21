@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/components/database.php'?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +16,16 @@
     <!-- Main -->
     <main>
         <div class="container-m">
-            <div class="albCont">
-                <img src="..." alt="">
-                <h2>titolo</h2>
-                <p class="autore">autore</p>
-                <p class="anno">anno</p>
-            </div>
+            <?php foreach($database as $album): ?>
+
+                <div class="albCont">
+                    <img src="<?= $album["poster"] ?>" alt="">
+                    <h2><?= $album["title"] ?></h2>
+                    <p class="autore"><?= $album["author"] ?></p>
+                    <p class="anno"><?= $album["year"] ?></p>
+                </div>
+
+            <?php endforeach; ?>
         </div>
     </main>
 </body>
