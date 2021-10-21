@@ -1,0 +1,49 @@
+// Variables
+$header-height: 5rem;
+
+$bg-header: #2E3A46;
+$bg-body: #1E2D3B;
+
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+// common
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    $container-margin: auto;
+    &-l{
+        width: 95%;
+        margin: $container-margin;
+    }
+    &-m{
+        max-width: 1600px;
+        margin: $container-margin;
+    }
+}
+
+header{
+    height: $header-height;
+    background-color: $bg-header;
+    position: relative;
+
+    .logo{
+        height: calc($header-height - 20px);
+        margin: 10px 0;
+    }
+}
+
+main{
+    height: calc(100vh - $header-height);
+    width: 100%;
+    background-color: $bg-body;
+}
