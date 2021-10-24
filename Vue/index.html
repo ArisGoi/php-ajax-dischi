@@ -14,16 +14,25 @@
         <header>
             <div class="container-l">
                 <img class="logo" src="../components/spotify-logo.c24917d4.png" alt="">
+                <select name="gnrList" id="gnrList" v-model="selGen">
+                    <option value="all">All</option>
+                    <option v-for="(gen, index) in genList" :key="index" :value="gen">{{gen}}</option>
+                </select>
             </div>
         </header>
 
         <main>
             <div class="container-m">
-                    <div class="albCont" v-for="(album, index) in albums" :key="index">
+                    <div class="albCont" 
+                        v-for="(album, index) in albums" 
+                        :key="index" 
+                        v-if="selGen == 'all' || album.genre == selGen">
+
                         <img :src="album.poster" alt="">
                         <h2>{{album.title}}</h2>
                         <p class="autore">{{album.author}}</p>
                         <p class="anno">{{album.year}}</p>
+
                     </div>
             </div>
         </main>
